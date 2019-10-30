@@ -1,0 +1,28 @@
+<?php 
+// PHP program to find area between the 
+// two given concentric circles 
+  
+// Function to find area between the 
+// two given concentric circles 
+function calculateArea($x, $y) 
+{ 
+    // Declare value of pi 
+    $pi = 3.1415926536; 
+  
+    // Calculate area of outer circle 
+    $arx = $pi * $x * $x; 
+  
+    // Calculate area of inner circle 
+    $ary = $pi * $y * $y; 
+  
+    // Difference in areas 
+    return ($arx - $ary); 
+} 
+  
+// Driver Code 
+$x = 2; 
+$y = 1; 
+  
+echo calculateArea($x, $y); 
+  
+?> 
